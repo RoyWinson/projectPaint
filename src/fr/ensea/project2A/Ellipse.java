@@ -6,6 +6,7 @@ import java.awt.Graphics;
 
 public class Ellipse extends TheFigure{
 
+    // Variables
     protected int semiAxysX;
     protected int semiAxysY;
 
@@ -14,6 +15,7 @@ public class Ellipse extends TheFigure{
         setBoundingBox(0,0);
     }
 
+    // Methods
     @Override
     public void setBoundingBox(int heightBB, int widthBB){
         semiAxysX = heightBB/2;
@@ -70,7 +72,7 @@ public class Ellipse extends TheFigure{
 
     @Override
     public String toString(){
-        System.out.println("Length:" + this.getSemiAxysX()+" |Width: "+ this.getSemiAxysY() + " Origine=(" + this.origin.getX() + "," + this.origin.getY() + ") coulor :" + this.getColor());
+        System.out.println("Length:" + this.getSemiAxysX()+" |Width: "+ this.getSemiAxysY() + " Origin =(" + this.origin.getX() + "," + this.origin.getY() + ") coulor :" + this.getColor());
         return null;}
 
     static public void main(String[] args){

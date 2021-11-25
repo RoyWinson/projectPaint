@@ -1,6 +1,10 @@
 package fr.ensea.project2A;
 
+
+
 public class Point {
+
+    // Variables
     int X;
     int Y;
 

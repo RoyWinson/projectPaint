@@ -6,7 +6,8 @@ import java.awt.Graphics;
 
 public class Rectangle extends TheFigure{ // Connection with TheFigure class
 
-    protected int length; // protected sert à ne plus faire des getter et setter dans les classes fille et mere
+    // Variables
+    protected int length;
     protected int width;
 
     // constructor
@@ -16,11 +17,13 @@ public class Rectangle extends TheFigure{ // Connection with TheFigure class
         setBoundingBox(0,0);
         }
 
+    // Methods
     @Override
     public void setBoundingBox(int heightBB, int widthBB) {
        length = widthBB;
        width = heightBB;
     }
+
 
     @Override
     public void setBoundingBox(Point first, Point second) {

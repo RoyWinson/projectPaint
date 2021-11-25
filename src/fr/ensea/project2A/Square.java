@@ -9,13 +9,14 @@ public class Square extends Rectangle{
         super(c, px,py);
         setBoundingBox(0,0);
     }
-    // rajouter override
+
     public void setBoundingBox(Integer heightBB, Integer widthBB) {
         super.setBoundingBox(heightBB, widthBB);
         length = Math.min(heightBB, widthBB);
         width = Math.min(heightBB, widthBB);
     }
 
+    // Methods
     @Override
     public void setBoundingBox(Point first, Point second) {
         if (first.getX() < second.getX() & first.getY() < second.getY()) {
@@ -60,7 +61,7 @@ public class Square extends Rectangle{
     @Override
 
     public String toString(){
-        System.out.println("Length:" + this.getLength()+" |width: "+ this.getWidth() + " Origine=(" + this.origin.getX() + "," + this.origin.getY() + ")  color :" + this.getColor());
+        System.out.println("Length:" + this.getLength()+" |width: "+ this.getWidth() + " Origin =(" + this.origin.getX() + "," + this.origin.getY() + ")  color :" + this.getColor());
         return null;}
 
 

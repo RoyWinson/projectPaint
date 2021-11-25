@@ -19,6 +19,7 @@ public class Circle extends Ellipse{
         this.semiAxysY = Math.min(widthBB/2, heightBB/2);
     }
 
+    // Methods
     @Override
     public void setBoundingBox(Point first, Point second) {
         if (first.getX() < second.getX() & first.getY() < second.getY()) {
@@ -57,7 +58,7 @@ public class Circle extends Ellipse{
 
    @Override
     public String toString(){
-       System.out.println("Rayon:" + this.getSemiAxysX()+ " Origin =(" + this.origin.getX() + "," + this.origin.getY() + ") couleur :" + this.getColor());
+       System.out.println("Rayon:" + this.getSemiAxysX()+ " Origin =(" + this.origin.getX() + "," + this.origin.getY() + ") color :" + this.getColor());
        return null;}
 
 

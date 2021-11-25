@@ -9,31 +9,25 @@ import java.awt.event.*;
 
 public class Drawing extends JPanel implements MouseListener, MouseMotionListener {
 
-    /* Variables */
+    // Variables
     protected Color c;
     protected ArrayList<TheFigure> list;
     protected String nameFigure;
     protected int x;
     protected int y;
 
-    /* Getters & setters */
-    public void setColor(Color c) {
-        this.c = c;
-    }
+    // Getter
+    public void setColor(Color c) {this.c = c;}
 
-    public void setNameFigure(String nameFigure) {
-        this.nameFigure = nameFigure;
-    }
-
-    public void setList(ArrayList<TheFigure> l) {
-        this.list = l;
-    }
+    // Setter
+    public void setNameFigure(String nameFigure) {this.nameFigure = nameFigure;}
+    public void setList(ArrayList<TheFigure> l) {this.list = l;}
 
     public ArrayList<TheFigure> getList() {
         return this.list;
     }
 
-    /* Constructors */
+    // Constructors
     public Drawing() {
         super();
         this.c = Color.black;
@@ -43,7 +37,7 @@ public class Drawing extends JPanel implements MouseListener, MouseMotionListene
         this.addMouseMotionListener(this);
     }
 
-    /* Methods */
+    // Methods
     @Override
     public void paintComponent(Graphics g) {
         super.paintComponent(g);

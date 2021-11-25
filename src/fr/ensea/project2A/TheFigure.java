@@ -2,7 +2,8 @@ package fr.ensea.project2A;
 
 import java.awt.*;
 
-public abstract class TheFigure {
+
+public abstract class TheFigure{
 
     public java.awt.Color color;
     public Point origin;
@@ -22,7 +23,7 @@ public abstract class TheFigure {
     public Point getOrigin() {return this.origin;}
 
     // setter
-    public void setColor(Color color) {this.color = color;}  // java.awt.Color à rajouter peut etre
+    public void setColor(Color color) {this.color = color;}
     public void setOrigin(Point origin) {this.origin = origin;}
 
     @Override
